@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Sabores da Terra</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+      <h1>Menu do Sabores da Terra</h1>
+      <!-- Botões para navegar -->
+      <div>
+        <button onclick="window.location.href='index.html'" 
+                style="padding: 10px 20px; background-color: #2a9d8f; color: white; border: none; border-radius: 5px; cursor: pointer;">
+          Página Inicial
+        </button>
+        <button onclick="window.location.href='reservas.html'" 
+                style="padding: 10px 20px; background-color: #e76f51; color: white; border: none; border-radius: 5px; cursor: pointer;">
+          Fazer Reserva
+        </button>
+      </div>
+    </div>
+    <nav>
+      <button onclick="filtrarMenu('todos')">Todos</button>
+      <button onclick="filtrarMenu('vegetariano')">Vegetariano</button>
+      <button onclick="filtrarMenu('pratos-do-dia')">Pratos do Dia</button>
+      <button onclick="filtrarMenu('sem-gluten')">Sem Glúten</button>
+    </nav>
+  </header>
+  <main id="menu">
+    <!-- Os pratos serão carregados dinamicamente -->
+  </main>
+  <!-- Rodapé em formato de banner -->
+  <footer id="footer-banner">
+    <p>© 2024 Sabores da Terra. Todos os direitos reservados.</p>
+  </footer>
+  <script src="scripts/menu.js"></script>
+</body>
+</html>

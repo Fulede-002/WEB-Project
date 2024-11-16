@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Sabores da Terra</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+  </header>
+  <main>
+    <form id="form-contacto" onsubmit="return validarContacto()">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Seu email" required>
+      
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" placeholder="Assunto da mensagem" required>
+      
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <section id="info-contacto">
+      <h2>Informações de Contacto</h2>
+      <p><strong>Telefone:</strong> +258 123 456 789</p>
+      <p><strong>Endereço:</strong> Av. Principal, 123, Cidade</p>
+
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Sabores da Terra. Todos os direitos reservados.</p>
+  </footer>
+  <script src="scripts/contacto.js"></script>
+</body>
+</html>
